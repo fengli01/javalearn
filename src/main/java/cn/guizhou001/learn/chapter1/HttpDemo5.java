@@ -144,6 +144,8 @@ public class HttpDemo5 {
                         resumeModel.setMajor(elements.get(i).getElementsByClass("tdtext").get(0).text());
                     }
                 }
+
+                // 限制只抓取女同学
                 if ("男".equals(resumeModel.getGender()) || StringUtils.isEmpty(resumeModel.getAvatarUrl())) {
                     continue;
                 }
